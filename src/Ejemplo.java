@@ -1,14 +1,13 @@
-// Buena implementación
 
 import java.util.ArrayList;
 import java.util.List;
 
-// 1. Define una interfaz
+// 1. Se define una interfaz que sirve de conexion con las clases circulo y rectangulo
 interface Shape {
     double calculateArea();
 }
 
-// 2. Crea implementaciones
+// 2. Se crean las implementaciones
 class Circle implements Shape {
     private double radius;
 
@@ -37,7 +36,7 @@ class Rectangle implements Shape {
     }
 }
 
-// 3. Actualizar la clase AreaCalculator
+// 3. Se actualiza la clase AreaCalculator
 class AreaCalculator {
     public double calculateArea(Shape shape) {
         return shape.calculateArea();
